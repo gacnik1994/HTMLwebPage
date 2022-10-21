@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="slo">
+	<head>
+		<meta charset="ANSI">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title> 3D Shop </title>
+		<link rel="Stylesheet" type="text/css" href = "Index.css">
+		<script type="text/javascript" src="Index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<header class="glava">
+			<nav class="navbar navbar-expand-md navbar-dark fied-top bg-dark">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="index.html">3D PRINT</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria.expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>	
+					<div class="collapse navbar-collapse myMenu" id="navbarCollapse">
+						
+						<ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html">Domov</a>
+							</li>
+							<li class="nav-item">
+								<a onclick="odpri()" class="nav-link dropdown" aria-current="page" href="#">Oddelek</a>
+									<ul class="nav-bar skrij rounded">
+										<li class="nav-item">
+											<a class="nav-link pokazi " aria-current="page" href="#">Modeli</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link pokazi " aria-current="page" href="#">Digitalni modeli</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link pokazi " aria-current="page" href="#">Materiali</a>
+										</li>
+									</ul>	
+								
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">prijava/registracija</a>
+									<ul class="nav-bar skrij rounded" style="padding:10px">
+										<li class="nav-link" >
+										
+										  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+										  <label for="floatingInput">poštni naslov</label>
+										</li>
+										<li class="nav-link">
+										
+										  <input type="password" class="form-control" id="floatingInput" placeholder="geslo">
+										  <label for="floatingInput">geslo</label>
+										</li>
+										<li class="nav-link">
+										  <label>
+											<input type="checkbox" value="remember-me"> zapomni si me </input>
+										  </label>
+										</li>
+										<li class="nav-link">
+										  
+										</li>
+										<li class="nav-link">
+										  <button class="w-100 btn btn-sm btn-outline-light" type="submit">Prijava</button>
+										</li>
+										<li class="nav-link">
+										  <button class="w-100 btn btn-sm btn-light" type="submit">registracija</button>
+										</li>
+									</ul>
+							</li>
+							
+						</ul>
+						<ul class="navbar-nav  " id="kosarica">
+							<li class="nav-link">
+								<a type="button" class="dropdown nav-link" id="kosarica">
+								Kosarica
+								</a>
+								<ul class="nav-bar skrij rounded">
+									<p> V košarici</p>	
+									<button type="button" class="w-100 btn btn-sm btn-outline-light id="vKosarico"><a class="nav-link pokazi " id="kosarica" aria-current="page" href="#">V košarico</a></button>
+									
+								</ul>
+							</li>
+						</ul>	
+						<form class="d-flex">
+							  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+							  <button class="btn btn-outline-success" type="submit">Search</button>
+							</form>
+					</div>
+				</div>
+				
+			</nav>
+		</header>
+		<main>
+		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators" >
+			  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+			  <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+			  
+			</div>
+			<div class="carousel-inner"  >
+			  <div class="carousel-item active " >
+					<img src="slike/espeon.jpg" style="margin-top:-1200px; margin-left:-800px;" >
+				<div class="container" >
+				  <div class="carousel-caption text-start" >
+					<h1 class="naslov" >Izdelava 3D modelov po meri</h1>
+					
+					<p><a class="btn btn-lg btn-dark" href="#">Ogled</a></p>
+				  </div>
+				</div>
+			  </div>
+			 
+			  <div class="carousel-item">
+				<img src="slike/Mabsol.jpg" style="margin-top:-900px" >
+
+				<div class="container">
+				  <div class="carousel-caption text-end">
+					
+					
+					<p><a class="btn btn-lg btn-dark" href="#">Galerija modelov</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		 </div>
+		<div class="row">
+			<div class="col-lg-2 ">
+			</div>
+			<div class="col-lg-2 sredina ">
+				<img class="rounded-circle" src="slike/cube2.jpg" width="200px" height="200px">
+				<h2>Kocka</h2>
+				<p>cena: <b>10 €</b></p>
+				<button class="btn btn-dark">V kosarico</button>
+			</div>
+			<div class="col-lg-2 sredina">
+				<img class="rounded-circle" src="slike/ProHolder2.jpg" width="200px" height="200px" >
+				<h2>Držalo za Nindendo ProController</h2>
+				<p>cena: <b>10 €</b></p>
+				<button class="btn btn-dark">V kosarico</button>
+			</div>
+			<div class="col-lg-2 sredina">
+				<img class="rounded-circle" src="slike/sceptile2.jpg" width="200px" height="200px">
+				<h2>Sceptile</h2>
+				<p>cena: <b>15 €</b></p>
+				<button class="btn btn-dark">V kosarico</button>
+			</div>
+			<div class="col-lg-2 sredina">
+				<img class="rounded-circle" src="slike/Mabsol2.jpg" width="200px" height="200px">
+				<h2>Mega Absol</h2>
+				<p>cena: <b>15 €</b></p>
+				<button class="btn btn-dark">V kosarico</button>
+			</div>
+		</div>
+		
+		</main>			
+		
+</html>

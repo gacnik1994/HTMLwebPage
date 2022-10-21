@@ -1,0 +1,79 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+ 
+body { 
+	background-color: #fdf9f6;
+}
+button#kosarica {
+	
+	border-color:white;
+	background-color:#212529;
+	border:none;
+}
+
+.skrij{
+	display:none;
+	position:absolute;
+	background-color:#212529;
+	z-index:9999;
+}
+.nav-link{
+	position:0px;
+	margin:0px;
+	z-index:20;
+}
+
+
+#vKosarico{
+	margin:5px;
+	height:25%;
+}
+footer{
+	width:100%;
+	
+	padding:30px;
+	height:75px;
+	margin-bottom:0px;
+	bottom:0;
+	left:0;
+}
+.naVrh{
+	color:#6c757d;
+}
+.naVrh:hover{
+	color:#fff;
+}
+.paragraf{
+	color:#6c757d;
+	padding:1px;
+	margin:1px;
+}
+.nav-bar{
+	padding:10px;
+	list-style-type: none;
+	border:solid;
+	border-color:#6c757d;
+	border-width:1px;
+}
+.bd-placeholder-img{
+	background-image: url("slike/.jpg");
+}
+.carousel-item {
+	overflow: hidden;
+	height:450px;
+	max-height:450px;
+	align-items:center;
+}
+.naslov{
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.sredina{
+	
+	margin-top:50px;
+	text-align:center;
+	padding-left:150px;
+	padding-right:150px;
+}
